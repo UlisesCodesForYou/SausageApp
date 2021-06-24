@@ -1,0 +1,307 @@
+
+/* ################## DEFAULTS ############## */
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+/* Line height: This puts a space between the words. 
+IN this case, it'll put 1 pixels space
+MARGIN; This will put tell the computer to space the words
+space to space with no margin. */
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+label {
+    font-size: 35px;
+    font-weight: 600    ;
+}
+
+p {
+    font-size: 30px;
+    line-height: 1.2;
+
+}
+
+article p {
+    font-size: 35px;
+    font-weight: 500;
+    margin: auto;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33% ;} /* These are the sizes of columns.  The smaller the %, the smaller the column will be*/
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;} /* I can get 4 of these to fit in the screen.*/
+.col-4 {width: 33.33%;} /* 3 of these will fit the screen*/
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;} 
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box;
+}
+
+/*#################### CUSTOM STYLES ################*/
+
+#section-1-gradient {
+    background-image: linear-gradient(#7693F0,#47CEEB);
+
+}
+
+div.box {
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.slopeIcon img{ /*ALWAYS GRAB THE CHILD ELEMENT TO STYLE IT*/
+    display: block;
+    margin: auto; /*This centers the image*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 2px;
+    border-radius: 10px;
+
+    
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(#7693F0,#47CEEB);
+    padding: 15px 60px;
+    border-radius: 7px;
+    display: block;
+    margin: 5px; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+button.learnMore {
+    display: block;
+    margin: auto; /* This aligns it to the center.*/
+}
+
+div.icon {
+    width: 100%;
+}
+
+div.lefside-col {
+    margin-left: 25%;
+} 
+
+div.rightSideColumn {
+    margin-right: 15%;
+}
+
+h1.large {
+    color: white;
+    font-size: 56px;
+    margin: 0;
+    line-height: 65px;
+}
+
+h1.section2Header {
+    font-size: 65px;
+    text-align: center;
+
+}
+
+form h2 {
+    color: white;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    border-radius: 7px;
+}
+
+.footsy {
+    background-color: lightgray;
+    padding-left: 10%;
+}
+
+.footsy h2{
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.footsy ul{
+    font-size: 25px;
+    list-style: none; /* This removes the bullet points*/
+    text-align: left;
+    padding-left: 0;/* Since they had bullets, it automatically moved everything to the right.  To overwrite this, I just need to remove the left side padding. */
+
+}
+
+.footsy ul li {
+    color:black;
+    font-size: 20px;
+    line-height: 1.5;
+    ;
+}
+/*##################### NAV BAR #############*/
+
+nav {
+    width: 100%; /* This will make sure that it will take up 100% of any viewport*/
+    margin: 0; /* This put the nav bar edge to edge */
+}
+
+nav ul {
+    background-color: #eeeeee;
+    overflow: hidden; /* This prevents scrolling when any element is too big for the screen.  This clips any large elements. */
+    margin: 0;
+    padding: 0;
+}
+
+ ul.topNav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topNav li.topNav-right {
+    float: right;
+}
+
+ul.topNav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase; /* THIS WILL MAKE ALL THE LETTERS UPPERCASE.*/ 
+    color: #666666;
+}
+
+ul.topNav li a:hover { /* THE :HOVER IS AN ACTION THAT HAPPENS WHEN I PUT THE CURSOR OVER THE LETTERS.*/
+    background-color: #7693F0; /* THIS WILL CHANGE THE COLOR OF THE BACKGROUND WHEN THE CURSOR IS OVER THE WORDS.*/
+    color: white; /* THIS WILL CHANGE THE COLOR OF THE LETTERS BACK TO WHITE WHEN THE BACKGROUND IS BLUE. */
+
+}
+
+ul.topNav li.dropDownIcon {
+    display: none;
+
+}
+
+
+/*##################### MOBILE ################# */
+
+@media screen and (max-width: 680px) {
+    ul.topNav li:not(:nth-child(1)) {
+        display: none;
+    }
+    ul.topNav li.dropDownIcon {
+        display: block;
+        float: right;
+    }
+
+    ul.topNav.responsive li.dropDownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+/*Above: This keeps the dropDownIcon button hidden when it's clicked.  */
+    }
+
+    ul.topNav.responsive { /* This came from the Js file.  Remember, I just transformed topNave to topNavResponsive.*/
+        position: relative;
+    }
+
+    ul.topNav.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.topNav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+    h1.section2Header {
+        font-size: 50px;
+
+    }
+
+    article p {
+        font-size: 25px;
+
+    }
+
+    .col-4, .col-5, .col-6, .col-7 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mobileStack {
+        display: block;
+        width: 50%;
+    }
+
+    .box {
+        padding: 5px;
+        display: block;
+    }
+
+    .slopeIcon {
+        margin: 10px; /* This will give a margin while still having the image take up 100% of the width. */
+    }
+    .slopeIcon img {
+        width: 100%;
+
+    }
+
+    div.leftside-col,
+    div.rightSideColumn {
+       margin: 20px;
+    }
+
+    inputbox[type="text"] {
+        width: 350px;
+
+    }
+
+    .videoContainer iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+
+    }
+}
+
