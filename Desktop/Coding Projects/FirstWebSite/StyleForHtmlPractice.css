@@ -1,0 +1,13 @@
+h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px black;
+}
+
+h2 {
+    color: rgb(0, 204, 205);
+    text-shadow: 1px 1 px 3px darkblue;
+}
+
+.borderImg {
+    border: 10px dashed red;
+}
