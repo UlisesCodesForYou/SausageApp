@@ -1,0 +1,30 @@
+
+// Dice game using a switch statement.
+
+let RandomDiceRoll = Math.floor(Math.random() * 7); //In this line of code, I used the Math.floor with the Math.random argument to generate a random number between 1-7.
+
+switch(RandomDiceRoll) { //In this line of code I declared a switch statement.  Then I passed the RandomDiceRoll as an argument.  
+    case 1:
+        alert('You got a 1...not good.'); //The code below tell the computer to find a matching case.  When it finds a match, it will run that specific block of code.  
+        break;
+    case 2: //Each case MUST END with a colon!
+        alert('You got a 2....still...not good.');
+        break; //This break key word is very important bacause it tells the computer to stop looking for other matches once it finds the right one. 
+    case 3:
+        alert('You got a 3....Getting better.  Still, not the number you want.');
+        break;
+    case 4:
+        alert('Ended up with a 4. Not bad, you are getting there!');
+        break;
+    case 5:
+        alert('ohhhh you got a 5!  Getting there.  Keep going!');
+        break;
+    case 6:
+        alert('1 away from the number you want!  You got a 6!');
+        break;
+    case 7:
+        alert('Lucky number 7!! You won!!');
+        break;
+    default:  //If the computer does not find a matching case it will automatically run the default code block.
+        alert('Why are you still holding the dice!  Throw that damn thing already!!');
+};
