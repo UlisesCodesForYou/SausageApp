@@ -7,7 +7,8 @@ let sausages = [
     {Meat: 'Duck', Name: 'Duck Bacon', Topping: 'Sauerkraut'},
     {Meat: 'Mango', Name: 'Mango Jalapeno', Topping: 'Hot Peppers'},
     {Meat: 'Pheasant', Name: 'Pheasant', Topping: 'Sauerkraut'},
-    {Meat: 'Snake', Name: 'Snake Jalapeno', Topping: 'Caramelized Onions'}
+    {Meat: 'Snake', Name: 'Snake Jalapeno', Topping: 'Caramelized Onions'},
+    {Meat: 'None', Name: 'Any Vegetable based', Topping: 'Any you woul like'}
 ];
 
 //Sausage choices with recommened toppings. 
