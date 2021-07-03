@@ -1,0 +1,17 @@
+
+.container-fluid {
+    background-color: purple;
+    height: 5rem;
+
+}
+
+.row { /* This row will be nested on top of the container.*/
+    background-color: #ff9232;
+    height: 4.7rem;
+}
+
+[class*="col-"] { /* This will grab ALL THE COL- classes! */
+    background-color: #00c3aa;
+    height: 4.2rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
