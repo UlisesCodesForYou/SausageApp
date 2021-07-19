@@ -1,0 +1,72 @@
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #eceeef;
+  border-radius: 0.3rem;
+  text-align: center;
+  display: block;
+}
+
+.sectionLight {
+  background-color: #eceeef;
+  padding: 2rem;
+}
+
+.sectionDark {
+  background-color: #cccccc;
+  padding: 2rem;
+}
+
+.coolStuffWrapper {
+  margin-top: 20px;
+}
+
+.coolStuffBtn {
+  background-color: red;
+  color: white;
+  display: block;
+  margin: auto;
+}
+
+.kickFlip {
+  text-align: right;
+}
+
+.modal-title {
+  margin: auto;
+}
+
+.modalFormWrapper {
+  padding: 2rem;
+}
+
+.kickThis {
+  display: block;
+  margin: auto;
+}
+
+.btnCenter {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.footerColor {
+  background-color: black;
+  padding: 15px;
+}
+
+.fa-facebook-square {
+  color: blue;
+  margin-right: 10px;
+}
+
+.fa-google {
+  color: red;
+}
+
+.square {
+  color: white;
+}
