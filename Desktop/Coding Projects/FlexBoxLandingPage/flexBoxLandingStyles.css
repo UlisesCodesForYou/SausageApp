@@ -1,0 +1,272 @@
+/*######### START OF DEFAULT STYLES SECTION #########*/
+
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 1rem;
+  color: #303137;
+  margin: 0;
+}
+
+/*####### END OF DEFAULT STYLES SECTION #######*/
+
+/*####### START OF CUSTOM STYLES SECTION #########*/
+
+.navbar,
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto; /*## margin: 0 auto is shorthand for 
+  setting the top and bottom margins to zero, and the 
+  left and right margins to auto. ##*/
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.brand {
+  font-size: 25px;
+}
+
+.brand,
+.navLink,
+a {
+  text-transform: uppercase;
+  color: #303137;
+  text-decoration: none;
+}
+
+.topNav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+.topNav,
+.navLink,
+a {
+  text-decoration: none;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.sensei {
+  color: #66b6d3;
+}
+
+.dropdownLink {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.headShotWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.myImage {
+  border-radius: 45%;
+  max-width: 200px;
+  width: 100%;
+}
+
+.services,
+.contact-container {
+  background-color: #f1f3fa;
+  padding: 4rem 1rem;
+}
+
+.mediaObject {
+  display: flex;
+  align-items: center;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.iconWrapperRight,
+.iconWrapperLeft {
+  width: 180px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.blurbWrapperRight,
+.blurbWrapperLeft {
+  flex: 1;
+}
+
+.blurbWrapperRight,
+.blurbWrapperLeft {
+  flex: 1;
+}
+
+.blurbWrapperLeft,
+.iconWrapperLeft {
+  order: 1;
+}
+
+.iconWrapperRight,
+.blurbWrapperRight {
+  order: 2;
+}
+
+.blurbHeader {
+  font-size: 24px;
+  margin-top: 1;
+}
+
+.blurbInfo {
+  color: #646b90;
+  font-size: 19px;
+}
+
+.quoteBtnWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.quoteBtn {
+  color: #ffffff;
+  background-color: #66b6d3;
+  font-size: 18px;
+  border: none;
+  padding: 0.8rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.2) 0px 10px 10px;
+}
+
+.sectionHeader {
+  text-align: center;
+  padding: 6rem 0 4rem;
+}
+
+.portfolioWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.portfolioObject {
+  max-width: 250px;
+  margin: 1rem 0;
+}
+
+.portfolioBox {
+  width: 250px;
+  height: 250px;
+  background-color: #f1f3fa;
+  transition: 0.2s ease-in-out;
+}
+
+.portfolioBox:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+label {
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 0.75rem;
+}
+
+.form-control {
+  max-width: 800px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #292b2c;
+  border-radius: 2px;
+  border: 1px solid #ced4da;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-clip: padding-box;
+  display: block;
+}
+
+.submit-btn-wrapper {
+  margin-top: 3rem;
+}
+
+/*######## END OF CUSTOM STYLES SECTION #########*/
+
+/*######## START OF MEDIA QUERY SECTION ##########*/
+
+@media (max-width: 768px) {
+  .topNav .navLink {
+    display: none;
+  }
+
+  .topNav,
+  .dropdownLink {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .topNav,
+  .responsive {
+    flex-direction: column;
+  }
+
+  .topNav,
+  .responsive,
+  .navLink {
+    display: block;
+  }
+
+  .portfolioWrapper {
+    text-align: center;
+    margin-right: 5px;
+  }
+
+  .mediaObject {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .iconWrapperRight,
+  .iconWrapperLeft {
+    order: 1;
+  }
+
+  .blurbWrapperLeft,
+  .blurbWrapperRight {
+    order: 1;
+  }
+
+  .form-Group {
+    display: flex;
+  }
+
+  .submit-btn-wrapper {
+    text-align: center;
+  }
+}
+@media (max-width: 599px) {
+  .portfolioWrapper {
+    justify-content: center;
+  }
+}
+
+/*#### END OF MEDIA QUERY SECTION ########*/
