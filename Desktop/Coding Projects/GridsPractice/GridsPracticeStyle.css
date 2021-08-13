@@ -1,0 +1,109 @@
+/*##### BEGINNING OF FIRST PRACTICE CONTAINER #######*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  place-items: stretch;
+  justify-content: center;
+  grid-template-areas:
+    "header header header header"
+    "header header header header"
+    "main main main sidevar"
+    ". footer footer";
+}
+
+.header {
+  background-color: orange;
+  grid-area: "header";
+}
+
+.main {
+  background-color: lightblue;
+  grid-area: "main";
+}
+
+.sidebar {
+  background-color: firebrick;
+  grid-area: "sidevar";
+}
+
+.footer {
+  background-color: lightgreen;
+  grid-area: "footer";
+}
+/*####### END OF FIRST PRACTICE CONTAINER ##########*/
+
+/*######## START OF SECOND PRACTICE CONTAINER #######*/
+.colorful-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  gap: 20px 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  place-items: stretch;
+}
+
+.onion {
+  background-color: blue;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 4;
+}
+
+.garlic {
+  background-color: lightblue;
+  grid-row: 1 / span 2;
+}
+
+.leek {
+  background-color: lightgreen;
+  grid-row: 1 / span 2;
+}
+
+.tom {
+  background-color: lightseagreen;
+  grid-row: 3 / span 2;
+  grid-column: 3 / span 2;
+}
+/*###### END OF SECOND PRACTICE CONTAINER #########*/
+
+/*##### START OF THIRD PRACTICE CONTAINER ##########*/
+.practice-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  gap: 20px 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  place-items: stretch;
+}
+
+.ulises {
+  background-color: lightgreen;
+  grid-row: 1 / span 2;
+}
+
+.juju {
+  background-color: lightgrey;
+  grid-row: 1 / span 2;
+}
+
+.josie {
+  background-color: lightpink;
+  grid-row: 3 / span 2;
+}
+
+.luis {
+  background-color: lightyellow;
+  grid-row: 3 / span 2;
+}
+
+.kim {
+  background-color: lightcoral;
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 4;
+}
+/*##### END OF THIRD PRACTICE CONTAINER ###########*/
