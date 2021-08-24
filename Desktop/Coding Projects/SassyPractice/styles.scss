@@ -1,0 +1,73 @@
+//#### VARIABLES #####
+$brand-name: #6600cc;
+$brand-sub: #cc66ff;
+$brand-dark: #333;
+$brand-light: #e6f2ff;
+
+//#### MIXINS ######
+@mixin shaping($height, $width, $rad, $bg, $color) {
+  height: $height;
+  width: $width;
+  border-radius: $rad;
+  background-color: $bg;
+  color: $color;
+}
+
+@mixin btn-main($padding, $rad, $bg, $color) {
+  padding: $padding;
+  border-radius: $rad;
+  background-color: $bg;
+  color: $color;
+  border-width: 0;
+  border-style: none;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  &:hover {
+    background-color: lighten($brand-name, 20%);
+  }
+}
+
+//#### STYLES #####
+
+body {
+  background-color: $brand-light;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+section {
+  background-color: $brand-sub;
+  color: $brand-dark;
+  width: 780px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 7px;
+  position: relative;
+  z-index: -2;
+}
+
+.thumb1 {
+  @include shaping(120px, 120px, 10%, $brand-dark, $brand-light);
+  margin: 0 190px -90px;
+}
+
+.thumb2 {
+  @include shaping(100px, 100px, 50%, $brand-sub, $brand-sub);
+  margin: -50px 1300px;
+}
+
+.btn-1 {
+  @include btn-main(15px 20px, 7px, $brand-name, white);
+}
+
+.btn-2 {
+  @include btn-main(30px, 50%, $brand-dark, white);
+  font-size: 2rem;
+  &:hover {
+    background-color: darken($brand-name, 10%);
+  }
+}
